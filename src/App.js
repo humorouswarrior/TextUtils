@@ -47,7 +47,7 @@ function App() {
       <Routes>
           <Route exact path="/" element = {<TextForm heading = "Enter the text to analyze below" mode = {mode} showAlert = {showAlert} />}/>
           <Route exact path="home" element = {<TextForm heading = "Enter the text to analyze below" mode = {mode} showAlert = {showAlert} />}/>
-          <Route exact path="about" element = {<About />}/>
+          <Route exact path="about" element = {<About mode = {mode}/>}/>
         </Routes>
         </div>
     </BrowserRouter>

@@ -8,11 +8,12 @@ const Alert = (props) => {
     }
 
   return (
-     
-        props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">       
+
+      <div style = {{height: '60px'}}>
+        {props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">       
         <strong>{capitalize(props.alert.type)}</strong> : {props.alert.msg}
-        </div>
-    
+        </div>}
+      </div>
    
     // the "props.alert &&" syntax works as follows. If props.alert is null then nothing happens. the statements after it are ignored. Otherwise they are executed. 
     //This shit can also be implemented using conventional if else 
